@@ -1,9 +1,6 @@
 body {
     margin: 0;
-    background: rgb(250,250,250);
-}
-* {
-    user-select: none;
+    background: rgb(220, 0, 0);
 }
 .root {
     position: absolute;
@@ -11,26 +8,47 @@ body {
     background: inherit;
     width: 100%;
 }
-
 .main {
+    position: relative;
+    top: 86px;
     width: 100%;
     display: flex;
+    margin-bottom: 50px;
 }
-
-.fruit {
+.menu {
+    position: fixed;
     width: 100%;
-    height: 200px;
+    background-color: rgb(230,230,230);
+    box-shadow: 2px 0px 5px rgb(150,150,150);
+    z-index: 10;
 }
-
+.content {
+    margin-top: 21.44px;
+    margin-right: 4%;
+    background-color: rgb(250,250,250);
+    padding: 30px;
+    box-shadow: 2px 2px 5px rgb(200,200,200);
+}
+.red {
+    color: rgb(220,0,0);
+}
+.yellow {
+    color: rgb(255, 251, 0);
+}
 .lightgreen {
     color: rgb(181,230,29);
+}
+.lightblue {
+    color: rgb(29,161,242);
     text-decoration: none;
 }
-
+.purple {
+    color: rgb(150,50,250);
+    text-decoration: none;
+}
 .lightgray, i, .fangshi a {
     color: inherit;
 }
-
 .sticky {
     padding: 10px;
     color: rgb(80,80,80);
@@ -40,13 +58,10 @@ body {
     border-color: rgb(200,200,200);
     border-radius: 10px;
     width: 305.766px;
-    height: 469px;
     position: sticky;
-    top: 0;
-    margin-left: 7%;
-    margin-right: 6%;
-    margin-top: 21.44px;
     transition: all 1s;
+    background-color: rgb(250,250,250);
+    box-shadow: 2px 2px 5px rgb(200,200,200);
 }
 .sticky:hover {
     color: black;
@@ -54,19 +69,28 @@ body {
     padding: 25px;
     margin-left: 6%;
 }
-
+.stickybox:hover {
+    margin-left: 6%;
+    margin-right: 7%;
+}
+.stickybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 6%;
+    margin-top: 21.44px;
+    transition: all 1s;
+}
 .fangshi ul {
     list-style-type: none;
 }
-
-.projects, .posts {
+.projects, .posts, .diary {
     margin-top: 21.44px;
-}
-.projects, .posts {
     color: rgb(100,100,100);
     transition: all 1s;
 }
-.projects:hover, .posts:hover {
+.projects:hover, .posts:hover, .diary:hover {
     color: black;
 }
 a {
@@ -86,16 +110,20 @@ ul {
 .list {
     margin-top: 50px;
 }
-.tags {
+.diary table, .diary th, .diary td {
+    border-style: solid;
+    border-width: 1px;
+    margin: 20px 0;
+    border-spacing: 0;
+}
+a button {
+    padding: 4px;
+    border-radius: 5px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(200,200,200);
-    border-radius: 10px;
-    padding: 15px;
-}
-.story {
-    background: #ffff00;
-    color: #333;
+    background: rgb(0, 131, 65);
+    color: white;
 }
 .smallavt {
     display: inline-block;
@@ -106,4 +134,21 @@ ul {
     border-color: rgb(200,200,200);
     border-width: 1px;
     overflow: hidden;
+}
+.llg {
+    color: rgb(250,250,250);
+}
+z {
+    font-size: 12px;
+    display: block;
+}
+span {
+    color: orange;
+}
+.list li {
+    margin-bottom: 30px;
+}
+.kttext {
+    font-family: '楷体';
+    font-size: 18px;
 }
